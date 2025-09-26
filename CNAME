@@ -1,1 +1,4 @@
-shivpatel.online
+Host: www
+Type: CNAME
+Value: shivpatel.github.io
+TTL: Automatic
