@@ -1,4 +1,4 @@
-Project Logos — drop-in replacements
+Project Logos - drop-in replacements
 ====================================
 
 These four files replace your existing project images and keep the
@@ -11,7 +11,7 @@ website's /assets folder (overwrite the old ones):
   project-3.png     →  Playback           (React · Node.js · PHP)
 
 All four share one visual system: a dark app-icon tile with a
-project-specific emblem, an amber accent, and a wordmark — on a light
+project-specific emblem, an amber accent, and a wordmark - on a light
 "data-hub" field. Each is 1200×900 (4:3), so they fill the project
 cards edge-to-edge with no cropping.
 
@@ -24,4 +24,4 @@ Notes
 - latest.jpg / project-2.png / project-3.png are flat raster tiles with
   the same fonts baked in.
 - If you're using the updated Shiv-Website build, these are already in
-  place — this folder is just for convenience if you only want the images.
+  place - this folder is just for convenience if you only want the images.
