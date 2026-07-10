@@ -1,5 +1,5 @@
 /* =======================================================================
-   SHIV PATEL — interactions
+   SHIV PATEL - interactions
    Live signal trace · clock · scroll progress · scroll reveals
    ======================================================================= */
 (function () {
@@ -81,7 +81,7 @@
       y += Math.sin(nx * 23 - t * 1.7) * 0.16;
       y += Math.sin(nx * 4 + t * 0.6) * 0.22;
 
-      // Traveling spike — the "signal event"
+      // Traveling spike - the "signal event"
       const sp = (t * 0.09) % 1.4 - 0.2;
       const d = nx - sp;
       y += Math.exp(-(d * d) / 0.0009) * 1.1;
