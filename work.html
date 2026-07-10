@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shiv Patel — Work</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Sora:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="mediaqueries.css" />
+</head>
+<body class="theme-dark">
+  <header class="topbar">
+    <a class="logo" href="index.html" aria-label="About">
+      <span class="w-mark"></span>
+    </a>
+    <nav class="topnav" aria-label="Primary">
+      <a href="index.html">About</a>
+      <a href="work.html" aria-current="page">Work</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <time id="clock" class="clock" aria-label="Local time"></time>
+  </header>
+
+  <main>
+    <section class="container section reveal">
+      <h1 class="display center">Work</h1>
+      <p class="muted center">Selected projects and builds.</p>
+    </section>
+
+    <!-- Latest Work -->
+    <section id="latest" class="container section reveal">
+      <h2 class="section-label">Latest Work</h2>
+      <article class="spotlight">
+        <div class="spotlight-media tilt">
+          <img src="./assets/latest.jpg" alt="Latest project">
+        </div>
+        <div class="spotlight-copy">
+          <p class="eyebrow">01 | Product Designer & Developer</p>
+          <h3>Historic Hammond District</h3>
+          <p class="muted">Design + engineering for an admin CMS and a public site: properties, walking tours, and events. Django, React/TS, Postgres.</p>
+          <div class="btn-row">
+            <a class="btn" href="https://github.com/CivPatel/Legacy-HistoricDistrict-Project" target="_blank" rel="noopener">GitHub</a>
+            <a class="btn" href="#">Case Study</a>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="container section reveal">
+      <h2 class="section-label">Projects</h2>
+      <div class="work-grid">
+        <article class="work-card tilt">
+          <div class="work-thumb">
+            <img src="./assets/project-2.png" alt="EEG Circuit">
+          </div>
+          <div class="work-copy">
+            <div class="card-meta">01 | Brain Wave Detector</div>
+            <h3>EEG Circuit</h3>
+            <p class="muted">Designed and built an EEG (and ECG) circuit using an AD620AN instrumentation amplifier and TL084CN op-amps to measure brain wave activity and heartbeats. Enhanced EEG signal clarity by 40 through designing a real-time signal processing pipeline with noise-reduction filters and Python-based FFT analysis. Utilized Processing-based software to visualize real-time brain wave data and implemented FFT for frequency domain analysis. Integrated Python scripts for post-processing and advanced signal analysis, including time-series plotting and feature extraction.</p>
+          </div>
+        </article>
+
+        <article class="work-card tilt">
+          <div class="work-thumb">
+            <img src="./assets/project-3.png" alt="Playback Music Player">
+          </div>
+          <div class="work-copy">
+            <div class="card-meta">02 | Lead Developer</div>
+            <h3>Playback — Music Player</h3>
+            <p class="muted">Developed visually engaging and responsive user interfaces using HTML, CSS, and JavaScript for the Playback music and podcast platform. Integrated React frontend with Node.js/PHP backend to support audio streaming and authentication, ensuring seamless playback for 500+ test users. Boosted user engagement by designing dynamic content rendering and real-time notifications in React, reducing page load times by 20. Applied React.js for modular frontend development, improved reliability, scalability, or performance.</p>
+            <div class="btn-row">
+              <a class="btn" href="https://github.com/CivPatel/CMPS285-S24-S01-G02" target="_blank" rel="noopener">GitHub</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="sitefoot">
+    <p>© 2026 Shiv Patel</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

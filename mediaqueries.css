@@ -1,4 +1,46 @@
-/* Extra tiny adjustments */
-@media (max-width: 420px){
-  .topnav{display:none}
+/* =======================================================================
+   Responsive — mobile-first refinements
+   ======================================================================= */
+
+/* Tablet / small laptop */
+@media (max-width: 960px){
+  .cap-grid{ grid-template-columns:repeat(2,1fr) }
+  .spotlight{ grid-template-columns:1fr }
+  .spotlight-media{ min-height:240px; aspect-ratio:16/10 }
+  .work-card{ grid-template-columns:220px 1fr }
+  .about{ grid-template-columns:220px 1fr }
+  .hero-grid{ grid-template-columns:1fr; gap:14px; max-width:640px }
+}
+
+/* Large phone */
+@media (max-width: 680px){
+  :root{ --radius:14px }
+
+  .topnav{ display:none }                 /* keep header clean on mobile */
+  .topbar{ height:58px }
+
+  .hero{ min-height:auto; padding-block:44px 56px }
+  .hero-name{ font-size:clamp(52px,20vw,96px) }
+  .signal{ height:64px }
+  .scroll-hint{ display:none }
+
+  .cap-grid{ grid-template-columns:1fr }
+
+  .work-card{ grid-template-columns:1fr; gap:16px }
+  .work-thumb{ aspect-ratio:16/10 }
+
+  .about{ grid-template-columns:1fr; gap:24px }
+  .about-pic{ max-width:220px }
+  .stack-block{ flex-direction:column; gap:10px }
+  .stack-label{ padding-top:0 }
+
+  .foot-inner{ justify-content:center; text-align:center }
+}
+
+/* Small phone */
+@media (max-width: 400px){
+  .status{ font-size:11.5px; gap:7px }
+  .cta{ gap:9px }
+  .btn{ padding:11px 15px }
+  .contact-links{ flex-wrap:wrap }
 }
