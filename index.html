@@ -32,9 +32,8 @@
     </a>
     <nav class="topnav" aria-label="Primary">
       <a href="#work"><span class="idx">01</span> Work</a>
-      <a href="#projects"><span class="idx">02</span> Projects</a>
-      <a href="#about"><span class="idx">03</span> About</a>
-      <a href="#contact"><span class="idx">04</span> Contact</a>
+      <a href="#about"><span class="idx">02</span> About</a>
+      <a href="#contact"><span class="idx">03</span> Contact</a>
     </nav>
     <div class="topmeta">
       <span class="pulse-dot" aria-hidden="true"></span>
@@ -117,7 +116,7 @@
       </div>
     </section>
 
-    <!-- ===================== SELECTED WORK (spotlight) ===================== -->
+    <!-- ===================== WORK (merged) ===================== -->
     <section id="work" class="section">
       <div class="container">
         <header class="section-head reveal">
@@ -125,45 +124,61 @@
           <span class="head-line" aria-hidden="true"></span>
         </header>
 
-        <article class="spotlight reveal">
-          <a class="spotlight-media" href="https://github.com/CivPatel/Legacy-HistoricDistrict-Project" target="_blank" rel="noopener" aria-label="Historic Hammond District on GitHub">
-            <img src="./assets/latest.jpg" alt="Historic Hammond District platform interface" loading="lazy">
-            <span class="media-tag">LIVE PROJECT</span>
-          </a>
-          <div class="spotlight-copy">
-            <p class="proj-meta">Product designer &amp; developer</p>
-            <h3>Historic Hammond District</h3>
-            <p class="muted">
-              Design and engineering for a public site and admin CMS covering historic
-              properties, self-guided walking tours, and community events — built to be
-              easy for the city to maintain.
-            </p>
-            <ul class="stack" aria-label="Tech stack">
-              <li>Django</li><li>React / TS</li><li>Postgres</li>
-            </ul>
-            <div class="btn-row">
-              <a class="btn btn-sm" href="https://github.com/CivPatel/Legacy-HistoricDistrict-Project" target="_blank" rel="noopener">GitHub <span aria-hidden="true">↗</span></a>
-            </div>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <!-- ===================== PROJECTS ===================== -->
-    <section id="projects" class="section">
-      <div class="container">
-        <header class="section-head reveal">
-          <span class="eyebrow"><span class="eyebrow-idx">02</span> Projects</span>
-          <span class="head-line" aria-hidden="true"></span>
-        </header>
-
         <div class="work-grid">
+          <article class="work-card reveal">
+            <a class="work-thumb" href="https://property-ops-data-hub.vercel.app/" target="_blank" rel="noopener" aria-label="PropertyOps live site">
+              <img src="./assets/propertyops.svg" alt="PropertyOps property-management platform" loading="lazy">
+              <span class="thumb-tag">LIVE</span>
+            </a>
+            <div class="work-copy">
+              <p class="card-meta"><span class="card-idx">01</span> Full-stack developer · Property management + AI</p>
+              <h3>PropertyOps</h3>
+              <p class="muted">
+                A full-stack property-management platform for tracking locations, users, and
+                operational data. Built secure REST APIs with ASP.NET Core, C#, Entity Framework
+                Core, and SQL Server — full CRUD, DTOs, validation, and auth. Integrated the
+                <strong>OpenAI API</strong> so the app answers questions and surfaces insights
+                straight from property data, with backend services that keep API requests and
+                secrets locked down.
+              </p>
+              <ul class="stack" aria-label="Tech stack">
+                <li>ASP.NET Core</li><li>C#</li><li>EF Core</li><li>SQL Server</li><li>OpenAI</li><li>REST</li>
+              </ul>
+              <div class="btn-row">
+                <a class="btn btn-sm" href="https://property-ops-data-hub.vercel.app/" target="_blank" rel="noopener">Live site <span aria-hidden="true">↗</span></a>
+              </div>
+            </div>
+          </article>
+
+          <article class="work-card reveal">
+            <a class="work-thumb work-thumb--logo" href="https://github.com/CivPatel/Legacy-HistoricDistrict-Project" target="_blank" rel="noopener" aria-label="Historic Hammond District on GitHub">
+              <img src="./assets/latest.jpg" alt="Historic Hammond District" loading="lazy">
+              <span class="thumb-tag">LIVE</span>
+            </a>
+            <div class="work-copy">
+              <p class="card-meta"><span class="card-idx">02</span> Product designer &amp; developer · Web platform + CMS</p>
+              <h3>Historic Hammond District</h3>
+              <p class="muted">
+                Design and engineering for a public site and admin CMS covering historic
+                properties, self-guided walking tours, and community events — built to be
+                easy for the city to maintain. Django on the back, React/TypeScript on the
+                front, Postgres underneath.
+              </p>
+              <ul class="stack" aria-label="Tech stack">
+                <li>Django</li><li>React / TS</li><li>Postgres</li>
+              </ul>
+              <div class="btn-row">
+                <a class="btn btn-sm" href="https://github.com/CivPatel/Legacy-HistoricDistrict-Project" target="_blank" rel="noopener">GitHub <span aria-hidden="true">↗</span></a>
+              </div>
+            </div>
+          </article>
+
           <article class="work-card reveal">
             <a class="work-thumb" href="#" aria-label="EEG Circuit project">
               <img src="./assets/project-2.png" alt="EEG signal-processing circuit" loading="lazy">
             </a>
             <div class="work-copy">
-              <p class="card-meta"><span class="card-idx">01</span> Brain-wave detector · Hardware + DSP</p>
+              <p class="card-meta"><span class="card-idx">03</span> Brain-wave detector · Hardware + DSP</p>
               <h3>EEG Circuit</h3>
               <p class="muted">
                 Designed and built an EEG/ECG circuit (AD620AN instrumentation amp,
@@ -182,7 +197,7 @@
               <img src="./assets/project-3.png" alt="Playback music player interface" loading="lazy">
             </a>
             <div class="work-copy">
-              <p class="card-meta"><span class="card-idx">02</span> Lead developer · Streaming platform</p>
+              <p class="card-meta"><span class="card-idx">04</span> Lead developer · Streaming platform</p>
               <h3>Playback — Music Player</h3>
               <p class="muted">
                 Lead developer on a music &amp; podcast streaming platform. Built responsive
@@ -206,7 +221,7 @@
     <section id="about" class="section">
       <div class="container">
         <header class="section-head reveal">
-          <span class="eyebrow"><span class="eyebrow-idx">03</span> About</span>
+          <span class="eyebrow"><span class="eyebrow-idx">02</span> About</span>
           <span class="head-line" aria-hidden="true"></span>
         </header>
 
@@ -242,7 +257,7 @@
     <section id="contact" class="section">
       <div class="container">
         <div class="contact reveal">
-          <p class="eyebrow"><span class="eyebrow-idx">04</span> Contact</p>
+          <p class="eyebrow"><span class="eyebrow-idx">03</span> Contact</p>
           <h2 class="contact-head">Let's build something.</h2>
           <p class="muted contact-sub">
             Open to fullstack, AI/ML, and systems roles. Email is the fastest way to reach me.

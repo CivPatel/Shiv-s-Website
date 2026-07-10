@@ -328,9 +328,27 @@ a:focus-visible, button:focus-visible{
   transition:transform .7s var(--ease); filter:saturate(.9)
 }
 .work-card:hover .work-thumb img{ transform:scale(1.06); filter:saturate(1) }
+/* Logo-style thumbnails: show the full mark on a light field instead of cropping */
+.work-thumb--logo{ background:#eeeae1 }
+.work-thumb--logo img{ object-fit:contain; padding:14% 12%; filter:none }
+.work-card:hover .work-thumb--logo img{ transform:scale(1.04); filter:none }
 .work-thumb::after{
   content:""; position:absolute; inset:0; border-radius:12px;
   box-shadow:inset 0 0 0 1px rgba(255,255,255,.04);
+}
+.thumb-tag{
+  position:absolute; top:12px; left:12px; z-index:2;
+  display:inline-flex; align-items:center; gap:6px;
+  font-family:var(--mono); font-size:10px; letter-spacing:.16em;
+  color:#1a1200; background:var(--signal);
+  padding:4px 9px; border-radius:20px; box-shadow:0 4px 14px -4px var(--glow);
+}
+.thumb-tag::before{
+  content:""; width:5px; height:5px; border-radius:50%;
+  background:#1a1200; animation:pulse-dark 2s ease-out infinite;
+}
+@keyframes pulse-dark{
+  0%,100%{ opacity:1 } 50%{ opacity:.35 }
 }
 .work-copy h3{ font-family:var(--display); font-weight:600; font-size:clamp(21px,2.4vw,27px); letter-spacing:-.015em; margin:8px 0 10px }
 .card-meta{ font-family:var(--mono); font-size:12px; letter-spacing:.04em; color:var(--muted); margin:0; display:flex; align-items:center; gap:9px }
